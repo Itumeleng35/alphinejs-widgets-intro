@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="code.js" defer></script>
+    <script src="calc.js" defer></script>
+    <script src="counter.js" defer></script>
+
+
+    <style>
+        .message {
+            background-color: blueviolet;
+            color: black;
+            padding: 1em;
+            width: 10em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Learn about the DOM</h1>
+
+<div class="message">
+
+</div>
+
+    <div>
+        <input type="text" class="username">
+        <button class="btn" >Greet me</button>
+    </div>
+
+<hr>
+
+    <div>
+        <div class="counter" > </div>
+        <div>
+            <h2>Increment/Decrement</h2>
+
+<div class="theNumber">
+    0
+</div>
+
+              <button class="increment" >Increment</button>
+              <button class="decrement" >Decrement</button>
+        </div>
+   </div>
+
+   <hr>
+
+   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+
+   <div x-data="{ counter: 0 }">
+       
+       
+           <h2>Increment/Decrement with AlphineJS</h2>
+
+           <div x-text="counter">
+
+
+           </div>
+
+
+
+             <button x-on:click="counter++">Increment</button>
+             <button x-on:click=" if (counter > 0) counter--">Decrement</button>
+       </div>
+  
+
+
+
+
+
+</body>
+
+
+
+</html>
